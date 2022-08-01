@@ -1,8 +1,9 @@
 <p align="center"><a href="https://pttem.com" target="_blank"><img src="https://pttem.com/images/logo.png" width="400"></a></p>
 
 ## Ne Yapar?
-- JSON üzerinden aldığı ürünler listesini farklı alıcılar için farklı formatlarda sunum yapar, header'da gönderilen Accept değişkenine göre çıktı üretir
-
+- JSON üzerinden aldığı ürünler listesini farklı alıcılar için farklı formatlarda sunum yapar, header'da gönderilen Accept değişkenine (Örnek: Accept: application/json) göre çıktı üretir
+- Örnek Kullanım: curl --location --request GET 'http://127.0.0.1:8080/api/feed/google' \
+  --header 'Accept: application/json'
 ## Kurulum
 
 Gereklilikler:
