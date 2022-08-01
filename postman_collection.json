@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "f2f2db44-4ebe-43ac-a37c-46df4870a627",
+		"name": "PTTem Product Feeder System Challange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2136521"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8080/api/feed/google",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/feed/google",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"feed",
+						"google"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

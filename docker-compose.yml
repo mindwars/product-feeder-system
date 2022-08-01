@@ -1,0 +1,20 @@
+version: '3.9'
+
+networks:
+  product_feeder_system_net:
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: ./docker/server/DockerFile
+    container_name: 'product_feeder_system-server'
+    ports:
+      - '8080:80'
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+      - ./docker/server/apache/sites-enabled:/etc/apache2/sites-enabled
+      - ./docker/server/php/php.ini:/usr/local/etc/php/conf.d/extra-php-config.ini
+    networks:
+      - product_feeder_system_net
